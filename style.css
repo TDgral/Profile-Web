@@ -20,7 +20,7 @@ body {
   display: flex;
 
   margin: 0 auto;
-  width: 800px;
+  width: 90%;
 }
 .container .card {
   background-color: #f9f9f6;
@@ -54,9 +54,11 @@ h4 {
   letter-spacing: 3%;
   margin-top: 20px;
 }
-h6 {
-  text-align: center;
+h5 {
+  justify-content: center;
+  display: flex;
 
+  width: 320px;
   font-size: 14px;
   margin-top: 5px;
   font-weight: 600;
@@ -71,7 +73,7 @@ p {
   font-weight: 400;
   padding: 25px;
 }
-#button {
+#span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -79,7 +81,7 @@ p {
 
   height: 80%;
 }
-button {
+span {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   text-transform: capitalize;
@@ -95,9 +97,9 @@ button {
   height: 50px;
   width: 200px;
 }
-button:hover,
-button:focus,
-button:active {
+span:hover,
+span:focus,
+span:active {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.1);
   background-color: #f9f9f6;
@@ -124,7 +126,56 @@ i {
   margin-right: 10px;
   height: 50px;
 }
+.cm {
+  justify-content: center;
+  display: flex;
 
+  width: 100%;
+}
+input {
+  padding: 5px 5px;
+  height: 30px;
+}
+.input,
+input,
+#tA {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  outline: none;
+  border: none;
+  resize: none;
+
+  border-radius: 5px;
+  width: 250px;
+}
+h6 {
+  text-align: start;
+
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+textarea {
+  padding: 5px 5px;
+  height: 150px;
+}
+button {
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  border: none;
+
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: 0.3s;
+  width: 60px;
+  height: 25px;
+}
+button:hover {
+  cursor: pointer;
+
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
 @media screen and (max-width: 768px) {
   body {
     justify-content: center;
